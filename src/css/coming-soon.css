@@ -18,8 +18,8 @@ body, html {
 
 .topleft {
   position: absolute;
-  top: 0;
-  left: 16px;
+  top: 20px;
+  left: 20px;
 }
 
 .bottomleft {

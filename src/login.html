@@ -4,9 +4,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login - VideoMania</title>
 </head>
 <body>
     
+    <h1>Registro de usuarios</h1>
+
+    <div id='form' class='_form'>
+      <form action='#' method='POST' name='addUser'>
+    
+        <fieldset>
+          <legend>Nombre y apellido</legend>
+          <input type='text' name='name' value='Quién eres' />
+        </fieldset>
+    
+        <fieldset>
+            <legend>Email</legend>
+            <input type='email' name='email' value='Email' />
+          </fieldset>
+
+        <fieldset>
+          <legend>Password</legend>
+          <input type='password' name='password' value='password' />
+        </fieldset>
+    
+    
+        <fieldset>
+          <legend>Acerca de ti</legend>
+          <textarea name='about-yout'>Escribe algo acerca de ti</textarea>
+        </fieldset>
+
+        <fieldset>
+          <legend>Genero</legend>
+          <label class='input-check'>
+                                <input type='radio' name='gender' value='m'><span>Hombre</span>
+                          </label>
+          <label class='input-check'>
+                                <input type='radio' name='gender' value='f'><span>Mujer</span>
+                          </label>
+        </fieldset>
+    
+        <fieldset>
+          <legend>Peliculas</legend>
+          <label class='input-check'>
+            <input type='checkbox' name='movies' value='terror'><span>Terror</span>
+          </label>
+          <label class='input-check'>
+            <input type='checkbox' name='movies' value='adventure'><span>Aventura</span>
+          </label>
+          <label class='input-check'>
+            <input type='checkbox' name='movies' value='dramas'><span>Drama</span>
+          </label>
+          <label class='input-check'>
+            <input type='checkbox' name='movies' value='thrillers'><span>Thrillers</span>
+          </label>
+          <label class='input-check'>
+            <input type='checkbox' name='movies' value='romantic'><span>Romantica</span>
+          </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dispositivo favorito</legend>
+            <label class='input-select'>
+              <select name='film'>
+                <option selected='selected'>- Seleciona -</option>
+                <option value='tv'>SmarTV</option>
+                <option value='computer'>Ordenador</option>
+                <option value='mobile'>Movil</option>
+              </select>
+            </label>
+          </fieldset>
+
+        <input type='submit' name='submit' value='Enviar' />
+      </form>
+    </div>
+
 </body>
 </html>
