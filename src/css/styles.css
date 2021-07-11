@@ -2,11 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lato', 'Arial', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
   }
   
-  /* HEADINGS */
-  
+    
   h1, p {
     color: #fff;
     text-align: center;
@@ -25,8 +24,6 @@
     margin-bottom: 10px;
   }
   
-  /* BASIC SETUP */
-  
   .page-wrapper {
     width: 100%;
     height: auto;
@@ -34,7 +31,6 @@
   
   .nav-wrapper {
     width: 100%;
-    position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
     background-color: #fff;
@@ -44,21 +40,13 @@
     width: 100%;
     height: 5px;
     background-color: #3498db;
-    /*background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
-    background-size: 400% 400%;
-        -webkit-animation: gradbar 15s ease infinite;
-      -moz-animation: gradbar 15s ease infinite;
-      animation: gradbar 15s ease infinite;*/
   }
-  
-  /* NAVIGATION */
   
   .navbar {
     display: grid;
-    grid-template-columns: 1fr 4fr;/*repeat(4,100px);/*1fr 3fr;*/
+    grid-template-columns: 1fr 5fr;/*repeat(4,100px);/*1fr 3fr;*/
     align-items: center;
     height: 50px;
-    /*overflow: hidden;*/
   }
   
   .navbar img {
@@ -74,7 +62,6 @@
     grid-template-columns: repeat(5,1fr);
     justify-self: end;
     /*border: solid 1px blue;*/
-    
   }
   
   .nav-item a {
@@ -90,13 +77,13 @@
     color: #3498db;
   }
   
-  /* SECTIONS */
+    /* Secciones*/
   
   .headline {
     width: 100%;
     height: 50vh;
     min-height: 350px;
-    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.7)), url('https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/jPLiQ-9/mountains-background-for-titles-intro-projects-and-etc_ew22rur3l__F0000.png');
+    background: linear-gradient(rgba(10, 3, 107, 0.3),rgba(107, 3, 3, 0.7));
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -111,10 +98,7 @@
     display: flex;
     padding: 50px 20px;
     justify-content: space-around;
-
     flex-wrap: wrap;
-    /*justify-content: center;*/
-
   }
   
   .feature-container {
@@ -134,8 +118,10 @@
     margin-bottom: 15px;
   }
   
+/*inicio */
+
   /* SEARCH FUNCTION */
-  
+  /*
   #search-icon {
     font-size: 0.9rem;
     margin-top: 3px;
@@ -174,14 +160,18 @@
     z-index: 0;
   }
   
+
+  */
+
+  /*Input search*/
+  /*
   input {
     border: 0;
     border-left: 1px solid #ccc;
-    border-radius: 0; /* FOR SAFARI */
     outline: 0;
     padding: 5px;
   }
-  
+  */
   /* MOBILE MENU & ANIMATION */
   
   .menu-toggle .bar{
@@ -204,6 +194,7 @@
     cursor: pointer;
   }
   
+  /*
   #mobile-menu.is-active .bar:nth-child(2){
     opacity: 0;
   }
@@ -222,44 +213,9 @@
     transform: translateY(-8px) rotate(-45deg);
   }
   
-  /* KEYFRAME ANIMATIONS */
+*/
   
-  @-webkit-keyframes gradbar {
-      0% {
-          background-position: 0% 50%
-      }
-      50% {
-          background-position: 100% 50%
-      }
-      100% {
-          background-position: 0% 50%
-      }
-  }
-  
-  @-moz-keyframes gradbar {
-      0% {
-          background-position: 0% 50%
-      }
-      50% {
-          background-position: 100% 50%
-      }
-      100% {
-          background-position: 0% 50%
-      }
-  }
-  
-  @keyframes gradbar {
-      0% {
-          background-position: 0% 50%
-      }
-      50% {
-          background-position: 100% 50%
-      }
-      100% {
-          background-position: 0% 50%
-      }
-  }
-  
+
   /* Media Queries */
   
     /* Mobile Devices - Phones/Tablets */
@@ -270,7 +226,7 @@
       padding: 50px;
     }
     
-    /* MOBILE HEADINGS */
+    /* Movil */
     
     h1 {
       font-size: 1.9rem;
@@ -284,7 +240,9 @@
       font-size: 0.8rem;
     }
     
-    /* MOBILE NAVIGATION */
+
+    /* fin */
+    /* Movil navigation */
        
     .navbar ul {
       display: flex;
@@ -339,7 +297,7 @@
       order: -1;
     }
     
-    /* SEARCH DISABLED ON MOBILE */
+    /* Busqueda deshabilitada en movil */
     /*
     #search-icon {
       display: none;
@@ -349,4 +307,16 @@
     display: none;
    }
     */
+
+    #copyright{
+        bottom: 0;
+        width: 100%;
+        position: fixed;
+        height:50px;
+        line-height:50px;
+        background:#171717;
+        color:#fff;
+        padding: 10px;
+        text-align: center;
+      }
   }

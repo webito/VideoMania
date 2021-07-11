@@ -25,7 +25,6 @@
 
   .card-text {
     display: none;
-
     position: absolute;
     top: 0;
     bottom: 0;
@@ -41,11 +40,14 @@
     align-items: center;
   }
 
+  .card:hover .card-title {
+    color: white;
+  }
+
+/*  se pasa la gestion del row a styles
   .row-cards{
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
-
-
+      justify-content: center;*/
   }
 
